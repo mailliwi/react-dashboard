@@ -23,11 +23,12 @@ import {
   Stacked,
 } from "./pages";
 
+import { useStateContext } from "./contexts/ContextProvider";
+
 import "./App.css";
 
-const activeMenu = true;
-
 const App = () => {
+  const { activeMenu } = useStateContext();
   return (
     <div>
       <BrowserRouter>
